@@ -6,10 +6,6 @@ test('has a constructor for initialization', () => {
         constructor(name) {
             this.name = name;
         }
-
-        toString() {
-            return this.name;
-        }
     }
 
     const animal = new Animal();
@@ -27,10 +23,6 @@ test('constructor can have default param values', () => {
     class Animal {
         constructor(name = 'Honey Badger') {
             this.name = name;
-        }
-
-        toString() {
-            return this.name;
         }
     }
 

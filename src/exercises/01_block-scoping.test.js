@@ -35,8 +35,8 @@ test('cannot modify the value of a `const` variable', () => {
 });
 
 test('is trapped inside of an `if` statement', () => {
-    if (false) {
-        b = 1;
+    if (true) {
+        let b = 1;
     }
     expect(() => noop(b))
         .toThrow('b is not defined');
